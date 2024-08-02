@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, green, yellow);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 30px;
+    background-color: tomato;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1);
+
+}
+
+.container:hover {
+    transform: scale(1.25S);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+button {
+    margin-top: 20px;
+   border-radius: 5px;
+   width: 100px;
+   height: 30px;
+   background-color: blueviolet;
+   color: #fff;
+
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translate(20px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
